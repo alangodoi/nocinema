@@ -7,18 +7,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ProgressBar;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import io.alangodoi.moviesdbtest.R;
 
 public class SplashScreen extends AppCompatActivity {
 
-    ProgressBar progressBar;
+    @BindView(R.id.progressBar) ProgressBar progressBar;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_splashscreen);
-        views();
+        ButterKnife.bind(this);
 
         Thread thread = new Thread() {
             @Override
@@ -37,7 +39,4 @@ public class SplashScreen extends AppCompatActivity {
         thread.start();
     }
 
-    private void views() {
-        progressBar = findViewById(R.id.pbSplash);
-    }
 }
