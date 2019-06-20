@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="splash_screen_title">40sp</dimen>
+    <dimen name="now_playing_hint">20sp</dimen>
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="card_movie_radius">0dp</dimen>
+    <dimen name="movie_cover_height">220dp</dimen>
+    <dimen name="movie_title_padding">2dp</dimen>
+    <dimen name="movie_title">12sp</dimen>
+    <dimen name="offline_hint">15sp</dimen>
+</resources>

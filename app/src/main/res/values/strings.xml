@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">No Cinema</string>
+
+    <string name="msg_err">Algo deu errado.</string>
+    <string name="msg_offline">Verifique sua conexão com a internet!</string>
+
+    <string name="desc_nowplaying">Filmes em cartaz</string>
+    <string name="desc_title">Título</string>
+    <string name="desc_release_date">Data de Lançamento</string>
+    <string name="desc_genre">Gênero</string>
+    <string name="desc_overview">Sinopse</string>
+    <string name="desc_youtube">Veja o trailer no Youtube!</string>
+
+</resources>
