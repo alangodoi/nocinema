@@ -60,13 +60,13 @@ public class MainActivity extends AppCompatActivity implements MoviesHolder.OnMo
                 getResources().getColor(R.color.colorAccent),
                 android.graphics.PorterDuff.Mode.SRC_IN);
 
-        movieList = new ArrayList<>();
-        moviesAdapter = new MoviesAdapter(this, movieList, this);
-
-        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 2);
-        recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(moviesAdapter);
+//        movieList = new ArrayList<>();
+//        moviesAdapter = new MoviesAdapter(this, movieList, this);
+//
+//        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 2);
+//        recyclerView.setLayoutManager(mLayoutManager);
+//        recyclerView.setItemAnimator(new DefaultItemAnimator());
+//        recyclerView.setAdapter(moviesAdapter);
 
         apiInterface =
                 ApiClient.getClient().create(ApiInterface.class);
@@ -80,6 +80,15 @@ public class MainActivity extends AppCompatActivity implements MoviesHolder.OnMo
             tvNowPlaying.setVisibility(View.VISIBLE);
             recyclerView.setVisibility(View.VISIBLE);
             clConnection.setVisibility(View.GONE);
+
+            movieList = new ArrayList<>();
+            moviesAdapter = new MoviesAdapter(this, movieList, this);
+
+            RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 2);
+            recyclerView.setLayoutManager(mLayoutManager);
+            recyclerView.setItemAnimator(new DefaultItemAnimator());
+            recyclerView.setAdapter(moviesAdapter);
+
             getMovies();
         } else {
             tvNowPlaying.setVisibility(View.GONE);
